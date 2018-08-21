@@ -36,6 +36,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @objc func importPicture() {
         let picker = UIImagePickerController()
+        
+        //MARK: - picker.sourceType = .camera
+        picker.sourceType = .camera
         picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true, completion: nil)
@@ -84,7 +87,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //MARK: - Functions for saving the filtered image to Photos Album
     @IBAction func save(_ sender: Any) {
         //MARK: - UIImageWriteToSavedPhotosAlbum
-        UIImageWriteToSavedPhotosAlbum(imageView.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        if currentImage != nil {
+            UIImageWriteToSavedPhotosAlbum(imageView.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        } else { return }
+        
+       
         
     }
     //Error? because we may not get an error - in that case, it'll be nil.
@@ -109,6 +116,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //set the filter type to the one indicated by the user's selection
         currentFilter = CIFilter(name: action.title!)
         
+        //use the passed action's title to change the view's title attribute
+        title = action.title
+        
         //grab our original, unfiltered image
         let beginImage = CIImage(image: currentImage)
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
@@ -123,7 +133,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //we're going to check that a particular filter value has a set of input keys and, if so, use them
         let inputKeys = currentFilter.inputKeys
         
-        if inputKeys.contains(kCIInputIntensityKey) { currentFilter.setValue(intensity.value, forKey: kCIInputIntensityKey)}
+        if inputKeys.contains(kCIInputIntensityKey) {currentFilter.setValue(intensity.value, forKey: kCIInputIntensityKey)}
         if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(intensity.value * 200, forKey: kCIInputRadiusKey)}
         if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(intensity.value * 10, forKey: kCIInputScaleKey)}
         if inputKeys.contains(kCIInputCenterKey) { currentFilter.setValue(CIVector(x: currentImage.size.width / 2, y: currentImage.size.height / 2), forKey: kCIInputCenterKey)}

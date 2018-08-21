@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8CAE4E1D212CAAEE004B037C /* Project13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project13.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CAE4E1D212CAAEE004B037C /* Instascam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instascam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAE4E20212CAAEE004B037C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CAE4E22212CAAEE004B037C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CAE4E25212CAAEE004B037C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		8CAE4E1E212CAAEE004B037C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CAE4E1D212CAAEE004B037C /* Project13.app */,
+				8CAE4E1D212CAAEE004B037C /* Instascam.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8CAE4E1C212CAAEE004B037C /* Project13 */ = {
+		8CAE4E1C212CAAEE004B037C /* Instascam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CAE4E2F212CAAF0004B037C /* Build configuration list for PBXNativeTarget "Project13" */;
+			buildConfigurationList = 8CAE4E2F212CAAF0004B037C /* Build configuration list for PBXNativeTarget "Instascam" */;
 			buildPhases = (
 				8CAE4E19212CAAEE004B037C /* Sources */,
 				8CAE4E1A212CAAEE004B037C /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = Project13;
+			name = Instascam;
 			productName = Project13;
-			productReference = 8CAE4E1D212CAAEE004B037C /* Project13.app */;
+			productReference = 8CAE4E1D212CAAEE004B037C /* Instascam.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8CAE4E18212CAAEE004B037C /* Build configuration list for PBXProject "Project13" */;
+			buildConfigurationList = 8CAE4E18212CAAEE004B037C /* Build configuration list for PBXProject "Instascam" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8CAE4E1C212CAAEE004B037C /* Project13 */,
+				8CAE4E1C212CAAEE004B037C /* Instascam */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q58872TYB;
 				INFOPLIST_FILE = Project13/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q58872TYB;
 				INFOPLIST_FILE = Project13/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8CAE4E18212CAAEE004B037C /* Build configuration list for PBXProject "Project13" */ = {
+		8CAE4E18212CAAEE004B037C /* Build configuration list for PBXProject "Instascam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CAE4E2D212CAAF0004B037C /* Debug */,
@@ -322,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CAE4E2F212CAAF0004B037C /* Build configuration list for PBXNativeTarget "Project13" */ = {
+		8CAE4E2F212CAAF0004B037C /* Build configuration list for PBXNativeTarget "Instascam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CAE4E30212CAAF0004B037C /* Debug */,
